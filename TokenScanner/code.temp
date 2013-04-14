@@ -1,0 +1,19 @@
+function test(n:integer) : integer
+var i, sum : integer;
+begin
+	i := 1;
+	sum := 0;
+	while (i <= n) do
+	begin
+		sum := sum + i;
+        i := i + 1
+	end;
+	return sum
+end
+
+function main() : integer
+var n : integer;
+begin
+	n := 100;
+	return test(100)
+end

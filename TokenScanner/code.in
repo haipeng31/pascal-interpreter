@@ -1,0 +1,37 @@
+function GetPI(i:integer):real
+var sum,n,sign:real;
+var pd:boolean;
+begin
+  sum:=1.0;
+  n:=1.0;
+  sign:=1.0;
+  while (1.0/n>0.1) do
+  begin
+    sign:=-sign;
+    n:=n+2.0;
+    sum:=sum+sign*1.0/n
+  end;
+  return 4.0*sum
+end
+
+procedure test(fuck:boolean)
+var i, j : integer;
+begin
+	if (fuck = true)
+	then
+	begin
+		fuck := false;
+		i := 0;
+		j := 0;
+		j := i + j
+	end
+	else
+		fuck := true;
+	return
+end
+
+function main():real
+begin
+  test(true);
+  return GetPI(1)
+end
